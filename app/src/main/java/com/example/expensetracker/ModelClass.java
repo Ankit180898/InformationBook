@@ -1,15 +1,25 @@
 package com.example.expensetracker;
 
 public class ModelClass {
-    private String image;
+    private int image;
     private String category;
+    private String Description ;
 
-    public ModelClass(String image, String category) {
-        this.image = image;
-        this.category = category;
+    public String getDescription() {
+        return Description;
     }
 
-    public String getImage() {
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public ModelClass(int image, String category,String Description) {
+        this.image = image;
+        this.category = category;
+        this.Description=Description;
+    }
+
+    public int getImage() {
         return image;
     }
 
